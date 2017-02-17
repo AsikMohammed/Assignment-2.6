@@ -1,0 +1,120 @@
+1.)
+Program:
+              import java.util.Scanner;
+              public class acad {
+              public static void main(String args[]){
+                Scanner sc=new Scanner(System.in);
+                System.out.println("Enter the first number");
+                int a=sc.nextInt();
+                System.out.println("Enter the second number");
+                int b=sc.nextInt();
+                System.out.println("The even numbers between "+a+" and "+b+"are");
+                for(int i=a;i<=b;i++)
+                {
+                  if(i%2==0)
+                  {
+                    System.out.println(i+" ");
+                  }
+                }
+                System.out.println("The odd numbers between "+a+" and "+b+"are");
+                for(int i=a;i<=b;i++)
+                {
+                  if(i%2!=0)
+                  {
+                    System.out.println(i+" ");
+                  }
+                }
+                }
+              }
+
+Output:
+Enter the first number
+3
+Enter the second number
+10
+The even numbers between 3 and 10are
+4 
+6 
+8 
+10 
+The odd numbers between 3 and 10are
+3 
+5 
+7 
+9 
+
+2.)
+Program:
+              import java.util.Scanner;
+              public class acad {
+              public static void main(String args[]){
+                Scanner sc=new Scanner(System.in);
+                int n=sc.nextInt();
+                for(int i=1;i<=10;i++)
+                {
+                  System.out.println(n+" x "+i+" = "+n*i);
+                }
+                }
+              }
+
+Output:
+5
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+
+3.)
+Program:
+              import java.util.Scanner;
+              public class acad {
+              public static void main(String args[]){
+                Scanner sc=new Scanner(System.in);
+                int x,y,z;
+                System.out.println("Menu for operations");
+                System.out.println("1.Adding two numbers");
+                System.out.println("2.Adding three numbers");
+                System.out.println("Enter your choice");
+                int m=sc.nextInt();
+                switch(m)
+                {
+                case 1: System.out.println("Enter two numbers");
+                    x=sc.nextInt();
+                    y=sc.nextInt();
+                    sum(x,y);
+                    break;
+                case 2: System.out.println("Enter three numbers");
+                    x=sc.nextInt();
+                    y=sc.nextInt();
+                    z=sc.nextInt();
+                    sum(x,y,z);
+                    break;
+                }
+              }
+                static void sum(int x,int y)
+                {
+                  System.out.println(x+y);
+                }
+                static void sum(int x,int y,int z)
+                {
+                  System.out.println(x+y+z);
+                }
+              }
+
+Output:
+Menu for operations
+1.Adding two numbers
+2.Adding three numbers
+Enter your choice
+2
+Enter three numbers
+5
+7
+9
+21
